@@ -1,0 +1,104 @@
+2024-06-16 18:22:12,139 - __main__ - INFO - Creating item: id=0 title='string' content='string'
+2024-06-16 18:22:17,161 - __main__ - INFO - Root endpoint called
+2024-06-16 18:22:25,967 - __main__ - INFO - Creating item: id=0 title='string' content='string'
+2024-06-16 18:25:15,058 - __main__ - INFO - Gateway received request: GET http://0.0.0.0:8001/
+2024-06-16 18:25:15,059 - __main__ - INFO - Proxying request: GET http://0.0.0.0:8001/
+2024-06-16 18:25:15,177 - __main__ - INFO - Gateway received request: GET http://0.0.0.0:8001/favicon.ico
+2024-06-16 18:25:15,177 - __main__ - INFO - Proxying request: GET http://0.0.0.0:8001/favicon.ico
+2024-06-16 18:25:18,995 - __main__ - INFO - Gateway received request: GET http://0.0.0.0:8001/docs
+2024-06-16 18:25:18,997 - __main__ - INFO - Gateway response status: 200
+2024-06-16 18:25:19,286 - __main__ - INFO - Gateway received request: GET http://0.0.0.0:8001/openapi.json
+2024-06-16 18:25:19,293 - __main__ - INFO - Gateway response status: 200
+2024-06-16 18:27:10,657 - __main__ - INFO - Creating item: id=0 title='string' content='string'
+2024-06-16 18:27:23,253 - __main__ - INFO - Gateway received request: GET http://0.0.0.0:8001/docs
+2024-06-16 18:27:23,254 - __main__ - INFO - Gateway response status: 200
+2024-06-16 18:27:23,436 - __main__ - INFO - Gateway received request: GET http://0.0.0.0:8001/openapi.json
+2024-06-16 18:27:23,439 - __main__ - INFO - Gateway response status: 200
+2024-06-16 18:34:06,607 - __main__ - INFO - Gateway received request: GET http://0.0.0.0:8000/docs
+2024-06-16 18:34:06,609 - __main__ - INFO - Gateway response status: 200
+2024-06-16 18:34:06,879 - __main__ - INFO - Gateway received request: GET http://0.0.0.0:8000/openapi.json
+2024-06-16 18:34:06,882 - __main__ - INFO - Gateway response status: 200
+2024-06-16 18:34:58,721 - __main__ - INFO - Root endpoint called
+2024-06-16 18:39:11,925 - events - INFO - Creating event: id=0 title='string' content='string'
+2024-06-16 18:43:17,960 - __main__ - INFO - Gateway received request: GET http://0.0.0.0:8000/items
+2024-06-16 18:43:17,962 - __main__ - INFO - Proxying request: GET http://0.0.0.0:8000/items
+2024-06-16 18:43:18,020 - httpx - INFO - HTTP Request: GET http://127.0.0.1:8001/items "HTTP/1.1 307 Temporary Redirect"
+2024-06-16 18:43:18,021 - __main__ - INFO - Received response from main service: 307
+2024-06-16 18:43:18,083 - __main__ - INFO - Gateway received request: GET http://0.0.0.0:8000/favicon.ico
+2024-06-16 18:43:18,084 - __main__ - INFO - Proxying request: GET http://0.0.0.0:8000/favicon.ico
+2024-06-16 18:43:18,139 - httpx - INFO - HTTP Request: GET http://127.0.0.1:8001/favicon.ico "HTTP/1.1 404 Not Found"
+2024-06-16 18:43:18,140 - __main__ - INFO - Received response from main service: 404
+2024-06-16 18:54:32,849 - __main__ - INFO - Request: GET http://0.0.0.0:8000/
+2024-06-16 18:54:32,851 - __main__ - ERROR - Error: name 'iterate_in_threadpool' is not defined
+2024-06-16 18:57:29,919 - __main__ - INFO - Request: GET http://0.0.0.0:8000/
+2024-06-16 18:57:29,920 - __main__ - ERROR - Error: name 'iterate_in_threadpool' is not defined
+2024-06-16 18:57:36,376 - __main__ - INFO - Request: GET http://0.0.0.0:8000/
+2024-06-16 18:57:36,378 - __main__ - ERROR - Error: name 'iterate_in_threadpool' is not defined
+2024-06-16 18:59:06,876 - __main__ - INFO - Request: GET http://0.0.0.0:8000/
+2024-06-16 18:59:06,877 - __main__ - INFO - Response: 200, Body: {"message":"Hello World"}
+2024-06-16 18:59:08,095 - __main__ - INFO - Request: GET http://0.0.0.0:8000/
+2024-06-16 18:59:08,096 - __main__ - INFO - Response: 200, Body: {"message":"Hello World"}
+2024-06-16 19:00:13,421 - __main__ - INFO - Request: GET http://0.0.0.0:8000/
+2024-06-16 19:00:13,422 - __main__ - INFO - Response: 200, Body: {"message":"Hello World"}
+2024-06-16 19:00:42,585 - __main__ - INFO - Request: GET http://0.0.0.0:8000/docs
+2024-06-16 19:00:42,586 - __main__ - INFO - Response: 200, Body: 
+    <!DOCTYPE html>
+    <html>
+    <head>
+    <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swagger-ui-dist@4/swagger-ui.css">
+    <link rel="shortcut icon" href="https://fastapi.tiangolo.com/img/favicon.png">
+    <title>FastAPI - Swagger UI</title>
+    </head>
+    <body>
+    <div id="swagger-ui">
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swagger-ui-dist@4/swagger-ui-bundle.js"></script>
+    <!-- `SwaggerUIBundle` is now available on the page -->
+    <script>
+    const ui = SwaggerUIBundle({
+        url: '/openapi.json',
+    "dom_id": "#swagger-ui",
+"layout": "BaseLayout",
+"deepLinking": true,
+"showExtensions": true,
+"showCommonExtensions": true,
+oauth2RedirectUrl: window.location.origin + '/docs/oauth2-redirect',
+    presets: [
+        SwaggerUIBundle.presets.apis,
+        SwaggerUIBundle.SwaggerUIStandalonePreset
+        ],
+    })
+    </script>
+    </body>
+    </html>
+    
+2024-06-16 19:00:42,708 - __main__ - INFO - Request: GET http://0.0.0.0:8000/openapi.json
+2024-06-16 19:00:42,714 - __main__ - INFO - Response: 200, Body: {"openapi":"3.0.2","info":{"title":"FastAPI","version":"0.1.0"},"paths":{"/":{"get":{"summary":"Read Root","operationId":"read_root__get","responses":{"200":{"description":"Successful Response","content":{"application/json":{"schema":{}}}}}}},"/{path}":{"get":{"summary":"Proxy","operationId":"proxy__path__get","parameters":[{"required":true,"schema":{"title":"Path","type":"string"},"name":"path","in":"path"}],"responses":{"200":{"description":"Successful Response","content":{"application/json":{"schema":{}}}},"422":{"description":"Validation Error","content":{"application/json":{"schema":{"$ref":"#/components/schemas/HTTPValidationError"}}}}}},"put":{"summary":"Proxy","operationId":"proxy__path__get","parameters":[{"required":true,"schema":{"title":"Path","type":"string"},"name":"path","in":"path"}],"responses":{"200":{"description":"Successful Response","content":{"application/json":{"schema":{}}}},"422":{"description":"Validation Error","content":{"application/json":{"schema":{"$ref":"#/components/schemas/HTTPValidationError"}}}}}},"post":{"summary":"Proxy","operationId":"proxy__path__get","parameters":[{"required":true,"schema":{"title":"Path","type":"string"},"name":"path","in":"path"}],"responses":{"200":{"description":"Successful Response","content":{"application/json":{"schema":{}}}},"422":{"description":"Validation Error","content":{"application/json":{"schema":{"$ref":"#/components/schemas/HTTPValidationError"}}}}}},"delete":{"summary":"Proxy","operationId":"proxy__path__get","parameters":[{"required":true,"schema":{"title":"Path","type":"string"},"name":"path","in":"path"}],"responses":{"200":{"description":"Successful Response","content":{"application/json":{"schema":{}}}},"422":{"description":"Validation Error","content":{"application/json":{"schema":{"$ref":"#/components/schemas/HTTPValidationError"}}}}}},"patch":{"summary":"Proxy","operationId":"proxy__path__get","parameters":[{"required":true,"schema":{"title":"Path","type":"string"},"name":"path","in":"path"}],"responses":{"200":{"description":"Successful Response","content":{"application/json":{"schema":{}}}},"422":{"description":"Validation Error","content":{"application/json":{"schema":{"$ref":"#/components/schemas/HTTPValidationError"}}}}}}}},"components":{"schemas":{"HTTPValidationError":{"title":"HTTPValidationError","type":"object","properties":{"detail":{"title":"Detail","type":"array","items":{"$ref":"#/components/schemas/ValidationError"}}}},"ValidationError":{"title":"ValidationError","required":["loc","msg","type"],"type":"object","properties":{"loc":{"title":"Location","type":"array","items":{"anyOf":[{"type":"string"},{"type":"integer"}]}},"msg":{"title":"Message","type":"string"},"type":{"title":"Error Type","type":"string"}}}}}}
+2024-06-16 19:00:54,642 - events - INFO - Creating event: id=0 title='string' content='string'
+2024-06-16 19:01:15,685 - events - INFO - Creating event: id=0 title='string' content='string'
+2024-06-16 19:01:45,301 - events - INFO - Creating event: id=0 title='string' content='string'
+2024-06-16 19:01:45,561 - events - INFO - Creating event: id=0 title='string' content='string'
+2024-06-16 19:01:57,728 - __main__ - INFO - Fetching all items
+2024-06-16 19:02:13,610 - events - INFO - Fetching all events
+2024-06-16 19:02:32,468 - __main__ - INFO - Request: GET http://0.0.0.0:8000/items
+2024-06-16 19:02:32,468 - __main__ - INFO - Proxying request: GET http://0.0.0.0:8000/items
+2024-06-16 19:02:32,520 - httpx - INFO - HTTP Request: GET http://127.0.0.1:8001/items "HTTP/1.1 307 Temporary Redirect"
+2024-06-16 19:02:32,520 - __main__ - INFO - Received response from main service: 307
+2024-06-16 19:02:32,521 - __main__ - INFO - Response: 307, Body: 
+2024-06-16 19:02:32,524 - __main__ - INFO - Request: GET http://0.0.0.0:8000/items/
+2024-06-16 19:02:32,524 - __main__ - INFO - Proxying request: GET http://0.0.0.0:8000/items/
+2024-06-16 19:02:32,576 - __main__ - INFO - Fetching all items
+2024-06-16 19:02:32,576 - httpx - INFO - HTTP Request: GET http://127.0.0.1:8001/items/ "HTTP/1.1 200 OK"
+2024-06-16 19:02:32,577 - __main__ - INFO - Received response from main service: 200
+2024-06-16 19:02:32,577 - __main__ - INFO - Response: 200, Body: []
+2024-06-16 19:02:45,362 - __main__ - INFO - Request: GET http://0.0.0.0:8000/events
+2024-06-16 19:02:45,362 - __main__ - INFO - Proxying request: GET http://0.0.0.0:8000/events
+2024-06-16 19:02:45,411 - httpx - INFO - HTTP Request: GET http://127.0.0.1:8001/events "HTTP/1.1 307 Temporary Redirect"
+2024-06-16 19:02:45,412 - __main__ - INFO - Received response from main service: 307
+2024-06-16 19:02:45,412 - __main__ - INFO - Response: 307, Body: 
+2024-06-16 19:02:45,415 - __main__ - INFO - Request: GET http://0.0.0.0:8000/events/
+2024-06-16 19:02:45,416 - __main__ - INFO - Proxying request: GET http://0.0.0.0:8000/events/
+2024-06-16 19:02:45,474 - events - INFO - Fetching all events
+2024-06-16 19:02:45,475 - httpx - INFO - HTTP Request: GET http://127.0.0.1:8001/events/ "HTTP/1.1 200 OK"
+2024-06-16 19:02:45,476 - __main__ - INFO - Received response from main service: 200
+2024-06-16 19:02:45,476 - __main__ - INFO - Response: 200, Body: [{"id":0,"title":"string","content":"string"},{"id":0,"title":"string","content":"string"},{"id":0,"title":"string","content":"string"},{"id":0,"title":"string","content":"string"},{"id":0,"title":"string","content":"string"}]
